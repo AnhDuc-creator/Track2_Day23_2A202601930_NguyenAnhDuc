@@ -1,0 +1,15 @@
+{"ts": 1787665179.1818907, "iso": "2026-08-25T13:39:39", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm", "weights": false, "count": 0, "latest_doc_ts": null, "ts": 1787665179.1805334}, "weights": false, "count": 0, "pool_state": "warm"}
+{"ts": 1787665179.1861045, "iso": "2026-08-25T13:39:39", "step": "2_restore_snapshot", "ok": true, "rpo_seconds": 4.0, "docs_lost": 2, "embed_model_version": "embed-model=vi-e5-base@v3", "snapshot_at": 1787665174.7915204, "primary_latest_doc_ts": 1787665178.789224, "restored_latest_doc_ts": 1787665174.7914743}
+{"ts": 1787665179.186573, "iso": "2026-08-25T13:39:39", "step": "3_scale_pool", "target": "b", "from": "warm", "to": "full"}
+{"ts": 1787665185.3173802, "iso": "2026-08-25T13:39:45", "step": "4_wait_ready", "target": "b", "ready": true, "warmup_seconds": 6.13, "waited_s": 6.13, "last_probe": "http_200"}
+{"ts": 1787665185.3177614, "iso": "2026-08-25T13:39:45", "step": "5_dns_cutover", "active_region": "b", "file": "edge/active_region", "elapsed_s": 6.15}
+{"ts": 1787665592.7452564, "iso": "2026-08-25T13:46:32", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}, "weights": null, "count": null, "pool_state": "warm"}
+{"ts": 1787665592.7479823, "iso": "2026-08-25T13:46:32", "step": "2_restore_snapshot", "ok": true, "rpo_seconds": 118.0, "docs_lost": 59, "embed_model_version": "test", "snapshot_at": 1787665592.7454877, "primary_latest_doc_ts": 1787665292.7952044, "restored_latest_doc_ts": 1787665174.7914743}
+{"ts": 1787665592.7497869, "iso": "2026-08-25T13:46:32", "step": "3_scale_pool", "target": "b", "from": "full", "to": "full"}
+{"ts": 1787665593.7504869, "iso": "2026-08-25T13:46:33", "step": "4_wait_ready", "target": "b", "ready": false, "warmup_seconds": 1.0, "waited_s": 1.0, "last_probe": "ConnectError"}
+{"ts": 1787665593.7507145, "iso": "2026-08-25T13:46:33", "step": "abort", "reason": "4_wait_ready timeout -> KHONG cutover", "target": "b", "note": "doi DNS luc nay se cho user 503 tu ca hai region"}
+{"ts": 1787665811.4879436, "iso": "2026-08-25T13:50:11", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}, "weights": null, "count": null, "pool_state": "warm"}
+{"ts": 1787665811.4905646, "iso": "2026-08-25T13:50:11", "step": "2_restore_snapshot", "ok": true, "rpo_seconds": 118.0, "docs_lost": 59, "embed_model_version": "test", "snapshot_at": 1787665811.488578, "primary_latest_doc_ts": 1787665292.7952044, "restored_latest_doc_ts": 1787665174.7914743}
+{"ts": 1787665811.491659, "iso": "2026-08-25T13:50:11", "step": "3_scale_pool", "target": "b", "from": "full", "to": "full"}
+{"ts": 1787665812.492387, "iso": "2026-08-25T13:50:12", "step": "4_wait_ready", "target": "b", "ready": false, "warmup_seconds": 1.0, "waited_s": 1.0, "last_probe": "ConnectError"}
+{"ts": 1787665812.4926279, "iso": "2026-08-25T13:50:12", "step": "abort", "reason": "4_wait_ready timeout -> KHONG cutover", "target": "b", "note": "doi DNS luc nay se cho user 503 tu ca hai region"}
